@@ -1,12 +1,14 @@
 public class Movement
 {
-    public Player player;
+    public Player player {get; set;}
 
     public Movement(Player player)
     {
         this.player = player;
     }
 
+    // Checks if the location is null or not, if it is just return null
+    // If movement is possible change the player location to the new location
     public void Move(string direction)
     {
         direction = direction.ToUpper();
