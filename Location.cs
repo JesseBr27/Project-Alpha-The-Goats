@@ -9,11 +9,15 @@ public class Location
     public Location LocationToWest {get; set;}
 
 
-    public Location(int Id, string name, string description, Location north = null, Location south = null, Location east = null, Location west = null)
+    public Location(int Id, string name, string description, Location north = null, Location east = null, Location south = null, Location west = null)
     {
         this.ID = Id;
         this.Name = name;
         this.Description = description;
-    }
 
+        this.LocationToNorth = north;
+        this.LocationToEast = east;
+        this.LocationToSouth = south;
+        this.LocationToWest = west;
+    }
 }
